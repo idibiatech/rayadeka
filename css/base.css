@@ -4,13 +4,18 @@
 	box-sizing: border-box;
 }
 
+li,
+a {
+	list-style-type: none !important;
+	text-decoration: none !important;
+}
 :root {
 	font-size: 16px;
 	--color-text: #fdf17b;
 	--color-text-alt: #8bff85;
 	--color-text-grid: #fff;
 	--color-bg: #000;
-	--color-link: #54ad8a;
+	--color-link: #4f6d7a;
 	--color-link-hover: #a054fd;
 	--cut: 20px;
 }
@@ -40,7 +45,7 @@ body {
 .js .loading::after {
 	content: "";
 	position: fixed;
-	z-index: 1000;
+	z-index: 20;
 }
 
 .js .loading::before {
@@ -119,13 +124,13 @@ a:not(.card__image):focus-visible {
 }
 
 .frame {
-	z-index: 100;
+	z-index: 10;
 	position: relative;
-	padding: 2vw;
+	/* padding: 2vw;
 	display: grid;
 	grid-template-columns: auto 1fr;
 	grid-template-areas: "title title" "prev back" "credits credits" "sponsor sponsor";
-	grid-gap: 1rem;
+	grid-gap: 1rem; */
 	pointer-events: none;
 }
 
@@ -191,7 +196,7 @@ span.frame__demos-item:not(:first-child) {
 	grid-template-columns: 300px;
 	grid-auto-rows: 300px;
 	gap: 1rem;
-	z-index: 200;
+	z-index: 20;
 	color: var(--color-text-grid);
 }
 
@@ -357,5 +362,72 @@ span.frame__demos-item:not(:first-child) {
 	}
 	.grid {
 		grid-template-columns: repeat(2, 300px);
+	}
+}
+
+.frame__title {
+	color: transparent;
+}
+.frame {
+	width: auto;
+}
+
+.frame__title ul li a {
+	/* margin: 1rem 2rem; */
+	color: #000 !important;
+
+	margin: 0 10rem;
+}
+.link:first-child {
+	grid-area: link;
+}
+.link:nth-child(2) {
+	grid-area: link;
+}
+.link:nth-child(3) {
+	grid-area: link;
+}
+
+.link:nth-child(4) {
+	grid-area: link;
+}
+.hero-quote {
+	width: auto;
+}
+p {
+	color: #4f6d7a;
+}
+/* mobile below  */
+@media screen and (max-width: 40em) {
+	.frame ul {
+		/* background-color: gray; */
+		position: absolute;
+		right: 2rem;
+		top: 10rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		z-index: 500;
+	}
+}
+
+/* pc below  */
+@media screen and (min-width: 53em) {
+	.frame ul {
+		/* background-color: gray; */
+		/* display: none; */
+		display: flex;
+	}
+	.frame ul li {
+		/* background-color: gray; */
+		/* display: none; */
+		margin: 0 0.3rem;
+	}
+	.hero-quote {
+		width: 20rem;
+		position: absolute;
+		right: 80rem;
+		/* background-color: red; */
+		top: 60%;
 	}
 }
