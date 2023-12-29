@@ -1,6 +1,7 @@
 .pages-link {
 	position: absolute;
 	/* background-color: red; */
+	padding: 0;
 	z-index: 1000;
 	width: auto;
 	width: 100%;
@@ -15,13 +16,14 @@
 	justify-content: space-between;
 	align-items: center;
 	/* background-color: green; */
-	width: 100%;
+	/* width: 100% !important; */
+	padding: 0;
 }
 .pages-link ul li {
 	display: flex;
 	justify-content: center;
 	font-weight: 900;
-	/* background-color: red; */
+	width: 100%;
 }
 
 .section-one {
@@ -89,4 +91,9 @@
 	.biography-text {
 		padding: 0 30rem;
 	}
+}
+
+/* for gsap animation (bio page)  */
+.text-div {
+	opacity: 1;
 }
