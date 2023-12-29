@@ -417,17 +417,29 @@ p {
 		/* background-color: gray; */
 		/* display: none; */
 		display: flex;
+		/* padding: 0; */
 	}
 	.frame ul li {
 		/* background-color: gray; */
 		/* display: none; */
-		margin: 0 0.3rem;
+		margin-right: 0.6rem;
 	}
 	.hero-quote {
 		width: 20rem;
-		position: absolute;
-		right: 80rem;
+		position: fixed;
+		left: 2%;
 		/* background-color: red; */
-		top: 60%;
+		top: 75%;
 	}
+	.mobile-link-text {
+		display: none;
+	}
+}
+.mobile-link-text {
+	position: absolute;
+	bottom: 1rem;
+	font-family: var;
+	color: white;
+	font-family: "iki-mono-variable", sans-serif;
+	padding-left: 1rem;
 }
