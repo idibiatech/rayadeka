@@ -41,7 +41,7 @@ homepage.addEventListener("click", () => {
 const aboutPage = document.querySelector("#about-link");
 
 aboutPage.addEventListener("click", () => {
-	window.location.href = "./about.html";
+	window.location.href = "./biography.html";
 });
 const contactPage = document.querySelector("#contact-link");
 contactPage.addEventListener("click", () => {
