@@ -38,3 +38,18 @@ const homepage = document.querySelector("#homepage-link");
 homepage.addEventListener("click", () => {
 	window.location.href = "http://www.youtube.com";
 });
+const aboutPage = document.querySelector("#about-link");
+
+aboutPage.addEventListener("click", () => {
+	window.location.href = "./about.html";
+});
+const contactPage = document.querySelector("#contact-link");
+contactPage.addEventListener("click", () => {
+	window.location.href = "./contact.html";
+});
+
+const blogPage = document.querySelector("#blog-link");
+
+blogPage.addEventListener("click", () => {
+	window.location.href = "http://www.youtube.com";
+});
