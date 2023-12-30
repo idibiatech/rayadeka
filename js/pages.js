@@ -7,6 +7,16 @@ gsap.to(".image-div", {
 		scrub: true,
 	},
 });
+gsap.from(".biography-text", {
+	y: 220,
+	opacity: 0,
+	scrollTrigger: {
+		trigger: ".section-two",
+		start: "top 90%",
+		end: "top 0%",
+		scrub: true,
+	},
+});
 
 const bioLoadingAnim = gsap.timeline();
 

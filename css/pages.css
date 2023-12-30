@@ -50,6 +50,7 @@
 
 .section-one {
 	height: 60vh;
+
 	background-color: #f5f5f5;
 }
 .section-two {
@@ -61,6 +62,62 @@
 
 .biography-text {
 	padding: 0 3rem;
+}
+.section-two {
+	background-color: #e8e1d9;
+}
+.section-three {
+	height: 100vh;
+	/* background-color: #e8e1d9; */
+
+	background-color: #e8e1d9;
+
+	padding-top: 1rem;
+	position: relative;
+	padding: 0 0.5rem;
+}
+
+.learn-more {
+	display: flex;
+	padding: 3rem 0.5rem;
+	width: 100%;
+	justify-content: space-between;
+}
+.more-item:first-child {
+	text-align: start;
+}
+.more-item:last-child {
+	text-align: end;
+}
+.more-item p,
+.more-item h3 {
+	margin: 0;
+}
+.more-item h3 {
+	font-size: 15px;
+}
+.more-item p {
+	font-size: 12px;
+	margin-bottom: 0.5rem;
+}
+.more-item a {
+	font-size: 10px;
+	text-decoration: underline !important;
+}
+
+.get-in-touch {
+	position: absolute;
+	top: 30%;
+	left: 0;
+	padding: 0 1rem;
+	text-align: center;
+	/* background-color: red; */
+}
+.get-in-touch a {
+	text-decoration: underline !important;
+}
+.get-in-touch h2 {
+	text-align: center;
 }
 @media screen and (min-width: 53em) {
 	.pages-link ul {
@@ -90,6 +147,24 @@
 
 	.biography-text {
 		padding: 0 30rem;
+	}
+
+	/* section three  */
+	.section-three {
+		padding: 0 15rem;
+	}
+	.learn-more {
+		justify-content: space-between;
+
+		padding-top: 10rem;
+	}
+
+	.get-in-touch {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		padding: 0 20rem;
+		background-color: red;
 	}
 }
 
