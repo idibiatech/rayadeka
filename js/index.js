@@ -36,7 +36,7 @@ preloadImages(".card__img").then(() =>
 const homepage = document.querySelector("#homepage-link");
 
 homepage.addEventListener("click", () => {
-	window.location.href = "/";
+	window.location.href = "./";
 });
 const aboutPage = document.querySelector("#about-link");
 
