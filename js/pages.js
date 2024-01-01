@@ -33,3 +33,17 @@ bioLoadingAnim.from(".pages-link ul li", {
 	y: 50,
 	stagger: 0.1,
 });
+
+const contactBtn = document.querySelector(".circle");
+
+let hoverAnimation = gsap.timeline({ paused: true });
+
+hoverAnimation.fromTo(contactBtn, { scale: 1 }, { scale: 0.8 });
+
+contactBtn.addEventListener("mouseenter", () => {
+	hoverAnimation.play();
+});
+
+contactBtn.addEventListener("mouseleave", () => {
+	hoverAnimation.reverse();
+});
