@@ -127,6 +127,14 @@
 	left: 0;
 	/* bottom: 30%; */
 }
+#contact ul {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 0;
+}
 .email-btn {
 	width: 100%;
 	/* height: 3rem; */
